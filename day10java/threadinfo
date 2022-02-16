@@ -1,0 +1,86 @@
+What is ‘Threads’?
+
+Threads can help us to do parallel processing. Threads are 
+
+useful when you want to run multiple pieces of code in 
+
+parallel.
+
+A thread can be defined as a lightweight process which can 
+
+execute multiple codes in parallel. However, the thread is 
+
+different from a process. In OS, for each process, a 
+
+separate memory will be allocated. And the same is 
+
+applicable for thread as well, it has separate memory. All 
+
+the threads will run in the same memory which is allocated 
+
+for the process.
+
+How to create Threads in Java?
+
+A Thread can be created in Java in the following ways:
+
+1 : By Extending Thread class
+2 : Implementing Runnable interface
+
+* By extending Thread class:
+
+public class PlayMusic extends Thread {
+ 
+public void run() {
+for(int i=0;i<1000;i++) {
+System.out.println("Music Playing ...... ");
+}
+}
+ 
+public static void main(String Args[])
+{
+ 
+PlayMusic p=new PlayMusic();
+p.start();
+ 
+for(int i=0;i<1000;i++) {
+System.out.println("coding");
+}
+}
+}
+
+* By extending Thread class
+
+* Implementing Runnable Interface:
+
+public class DemoThread implements Runnable{
+public void run() {
+for(int i=0;i<1000;i++) {
+System.out.println("hey thread1 started");
+}
+}
+public static void main(String[] args) {
+DemoThread d=new DemoThread();
+Thread t1=new Thread(d);
+t1.start();
+ 
+DownloadThread down =new DownloadThread();
+Thread t2=new Thread(down);
+t2.start();
+}
+}
+
+* Implementing Runnable interface
+
+
+* Thread Methods:
+
+1: start() – Starts the thread.
+2: getState() – It returns the state of the thread.
+3: getName() – It returns the name of the thread.
+4: getPriority() – It returns the priority of the thread.
+5: sleep() – Stop the thread for the specified time.
+6: Join() – Stop the current thread until the called thread 
+
+    gets terminated.
+7: isAlive() – Check if the thread is alive.

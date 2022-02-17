@@ -1,4 +1,4 @@
-What is ‘Threads’?
+What is â€˜Threadsâ€™?
 
 Threads can help us to do parallel processing. Threads are 
 
@@ -75,12 +75,10 @@ t2.start();
 
 * Thread Methods:
 
-1: start() – Starts the thread.
-2: getState() – It returns the state of the thread.
-3: getName() – It returns the name of the thread.
-4: getPriority() – It returns the priority of the thread.
-5: sleep() – Stop the thread for the specified time.
-6: Join() – Stop the current thread until the called thread 
-
-    gets terminated.
-7: isAlive() – Check if the thread is alive.
+1: start() â€“ Starts the thread.
+2: getState() â€“ It returns the state of the thread.
+3: getName() â€“ It returns the name of the thread.
+4: getPriority() â€“ It returns the priority of the thread.
+5: sleep() â€“ Stop the thread for the specified time.
+6: Join() â€“ Stop the current thread until the called thread gets terminated.
+7: isAlive() â€“ Check if the thread is alive.
